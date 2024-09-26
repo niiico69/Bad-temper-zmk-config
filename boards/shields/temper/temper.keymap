@@ -10,10 +10,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define QWERTY 1
-#define NUM 2
+#define AZBEPO 1
+#define ALTGR 2
 #define NAV 3
-#define FUN 4
+#define MACROS 4
+
+#define BCKSP BACKSPACE
 
 / {
     conditional_layers {
@@ -80,17 +82,17 @@
                 default_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y       &kp APOS   
+        &kp Q         &kp W         &kp E         &kp R         &kp T              &kp Y        &kp U         &kp I         &kp O         &kp P   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
+        &kp A         &kp S         &kp D         &kp F         &kp G              &kp H        &kp J         &kp K         &kp L       &kp SEMI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &comma_semi    &dot_colon    &qmrk_excl
+        &kp Z         &kp X         &kp C         &kp V         &kp B              &kp N        &kp M       &kp COMMA      &kp DOT      &kp FSLH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp LGUI      &mo NUM     &smart_shft        &kp SPACE      &mo NAV     &super_bspc
+                                 &lt NAV ESC  &mt LSHFT BSPC   &kp LGUI      &lt MACROS RET &mt ALTGR SPACE &lt NAV DEL    
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
-                qwerty_layer {
+                azbepo_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         &kp Q         &kp W         &kp E         &kp R         &kp T              &kp Y        &kp U         &kp I         &kp O         &kp P   
@@ -103,7 +105,7 @@
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
-                num_layer {
+                altgr_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &kp TILDE       &kp AT       &kp LBRC      &kp RBRC     &kp PRCNT          &kp STAR       &kp N7        &kp N8        &kp N9      &kp MINUS
@@ -131,7 +133,7 @@
                         >;
                 };
 
-                fun_layer {
+                macros_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &tog QWERTY   &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_TOG         &trans        &kp F7        &kp F8        &kp F9       &kp F12
