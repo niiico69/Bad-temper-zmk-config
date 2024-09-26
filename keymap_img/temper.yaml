@@ -1,0 +1,261 @@
+layers:
+  default:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - - {t: A, h: ⌘}
+    - {t: S, h: ⎇}
+    - {t: D, h: ⌃}
+    - {t: F, h: ⇧}
+    - G
+    - H
+    - {t: J, h: ⇧}
+    - {t: K, h: ⌃}
+    - {t: L, h: ⎇}
+    - {t: ;, h: ⌘, s: ':'}
+  - - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - /
+  - - {t: ESC, h: nav}
+    - {t: BSPC, h: ⇧}
+    - ⌘
+    - {t: RET, h: macros}
+    - {t: SPACE, h: ⎇}
+    - {t: DEL, h: nav}
+  azbepolar:
+  - - B
+    - {t: ;, s: ':'}
+    - P
+    - O
+    - Z
+    - W
+    - V
+    - D
+    - L
+    - J
+  - - {t: Q, h: ⌘}
+    - {t: U, h: ⎇}
+    - {t: I, h: ⌃}
+    - {t: E, h: ⇧}
+    - {t: M, s: ','}
+    - C
+    - {t: T, h: ⇧}
+    - {t: S, h: ⌃}
+    - {t: R, h: ⎇}
+    - {t: N, h: ⌘}
+  - - {t: '6', s: /}
+    - Y
+    - X
+    - {t: 'Sft+ ,', s: .}
+    - K
+    - {t: azonedk, h: sticky, s: Sft+ M}
+    - A
+    - G
+    - H
+    - F
+  - - {t: ESC, h: aznav}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: SPACE, h: azaltgr}
+    - {t: DEL, h: aznav}
+  azaltgr:
+  - - AGr+ 9
+    - {t: 'Sft+ ,', s: Sft+ <}
+    - {t: Sft+ ., s: Sft+ >}
+    - {t: ']', s: '}'}
+    - Sft+ '
+    - AGr+ 0
+    - '1'
+    - '#'
+    - '4'
+    - AGr+ 7
+  - - AGr+ 4
+    - '5'
+    - {t: '-', s: _}
+    - {t: AGr+ =, s: AGr+ +}
+    - {t: '=', s: +}
+    - AGr+ 8
+    - {t: Sft+ =, s: Sft+ +}
+    - '6'
+    - {t: Sft+ ., s: Sft+ >}
+    - '3'
+  - - AGr+ 2
+    - AGr+ 5
+    - {t: AGr+ -, s: AGr+ _}
+    - '8'
+    - AGr+ 3
+    - AGr+ 6
+    - {t: /, s: '?'}
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - Sft+ M
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+  azonedk:
+  - - AGr+ Q
+    - '9'
+    - {t: '`', s: '~'}
+    - AGr+ O
+    - ''
+    - ''
+    - 'Sft+ #'
+    - '8'
+    - {t: ▽, type: trans}
+    - AGr+ U
+  - - '0'
+    - '2'
+    - '7'
+    - {t: 'AGr+ ]', s: 'AGr+ }'}
+    - ''
+    - '5'
+    - {t: '-', s: _}
+    - AGr+ I
+    - Sft+AGr+ I
+    - ''''
+  - - AGr+ G
+    - ''
+    - ''
+    - ''
+    - ''
+    - {type: held}
+    - ''
+    - ''
+    - ''
+    - ''
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  nav:
+  - ['', HOME, ↑, END, PG UP, AGr+ L, '7', '8', '9', Sft+ *]
+  - [⇪, ←, ↓, →, PG DN, AGr+ K, '4', '5', '6', '0']
+  - - ''
+    - Sft+ ↹
+    - ''
+    - ↹
+    - ''
+    - N
+    - '1'
+    - '2'
+    - '3'
+    - {t: ., s: '>'}
+  - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  aznav:
+  - - ''
+    - HOME
+    - ↑
+    - END
+    - PG UP
+    - {t: Sft+ ., s: Sft+ >}
+    - Sft+ 7
+    - Sft+ 8
+    - Sft+ 9
+    - '#'
+  - - ⇪
+    - ←
+    - ↓
+    - →
+    - PG DN
+    - '6'
+    - Sft+ 4
+    - Sft+ 5
+    - Sft+ 6
+    - {t: 'Sft+ ,', s: Sft+ <}
+  - ['', Sft+ ↹, '', ↹, '', Sft+ 0, Sft+ 1, Sft+ 2, Sft+ 3, M]
+  - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  macros:
+  - - VOL UP
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - PSCRN
+    - F7
+    - F8
+    - F9
+    - F12
+  - - MUTE
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F4
+    - F5
+    - F6
+    - F11
+  - - VOL DN
+    - PREV
+    - PP
+    - NEXT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F1
+    - F2
+    - F3
+    - F10
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  adjust:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - OUT TOG
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - BT CLR
+    - {t: ▽, type: trans}
+    - {t: azbepolar, h: toggle}
+    - {t: ▽, type: trans}
+    - {t: default, h: toggle}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
