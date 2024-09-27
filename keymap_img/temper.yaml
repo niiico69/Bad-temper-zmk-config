@@ -188,7 +188,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - BT CLR
-    - ''
+    - {t: azbepo, h: toggle}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
