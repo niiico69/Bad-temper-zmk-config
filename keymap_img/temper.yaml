@@ -1,16 +1,16 @@
 layers:
   default:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - - A
-    - S
-    - D
-    - F
+  - - {t: A, h: ⌘}
+    - {t: S, h: ⎇}
+    - {t: D, h: ⌃}
+    - {t: F, h: ⇧}
     - G
     - H
-    - J
-    - K
-    - L
-    - {t: ;, s: ':'}
+    - {t: J, h: ⇧}
+    - {t: K, h: ⌃}
+    - {t: L, h: ⎇}
+    - {t: ;, h: ⌘, s: ':'}
   - - Z
     - X
     - C
@@ -25,10 +25,10 @@ layers:
     - {t: BSPC, h: ⇧}
     - ⌘
     - {t: RET, h: macros}
-    - {t: SPACE, h: '2'}
+    - {t: SPACE, h: ⎇}
     - {t: DEL, h: nav}
   azbepo:
-  - [B, E, P, O, E, V, D, L, J, Z]
+  - [B, E, P, O, E, V, D, L, J, W]
   - - A
     - U
     - I
@@ -141,10 +141,10 @@ layers:
     - F9
     - F12
   - - MUTE
-    - {t: BT, h: '0'}
-    - {t: BT, h: '1'}
-    - {t: BT, h: '2'}
-    - {t: BT, h: '3'}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - F4
     - F5
@@ -154,7 +154,7 @@ layers:
     - PREV
     - PP
     - NEXT
-    - BT CLR
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - F1
     - F2
