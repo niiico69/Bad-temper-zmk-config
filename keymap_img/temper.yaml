@@ -93,36 +93,18 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   nav:
-  - - ''
-    - HOME
-    - ↑
-    - END
-    - PG UP
-    - {t: /, s: '?'}
-    - '7'
-    - '8'
-    - '9'
-    - '*'
-  - - ⇪
-    - ←
-    - ↓
-    - →
-    - PG DN
-    - {t: '-', s: _}
-    - '4'
-    - '5'
-    - '6'
-    - '0'
+  - ['', HOME, ↑, END, PG UP, AGr+ L, '7', '8', '9', Sft+ *]
+  - [⇪, ←, ↓, →, PG DN, AGr+ K, '4', '5', '6', '0']
   - - ''
     - Sft+ ↹
     - ↹
     - ''
     - ''
-    - {t: ',', s: <}
+    - N
     - '1'
     - '2'
     - '3'
-    - .
+    - {t: ., s: '>'}
   - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
