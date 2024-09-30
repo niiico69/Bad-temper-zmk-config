@@ -55,37 +55,37 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  altgr:
-  - - ^
-    - <
-    - '>'
-    - $
-    - '%'
-    - '@'
-    - '&'
-    - '*'
-    - {t: '''', s: '"'}
+  altgrbp:
+  - - AGr+ 6
+    - '2'
+    - '3'
     - {t: '`', s: '~'}
-  - - '{'
-    - (
-    - )
-    - '}'
     - {t: '=', s: +}
-    - \
-    - +
+    - '6'
+    - AGr+ E
+    - '0'
+    - N
+    - S(EQUAL)
+  - - AGr+ X
+    - '4'
+    - '5'
+    - AGr+ C
     - {t: '-', s: _}
-    - /
-    - '"'
-  - - '~'
-    - {t: '[', s: '{'}
-    - {t: ']', s: '}'}
-    - _
-    - '#'
-    - '|'
-    - '!'
-    - {t: ;, s: ':'}
-    - ':'
-    - '?'
+    - AGr+ Z
+    - '7'
+    - '8'
+    - '9'
+    - '1'
+  - - AGr+ B
+    - AGr+ 4
+    - AGr+ 5
+    - AGr+ SPACE
+    - {t: Sft+ `, s: Sft+ ~}
+    - AGr+ Q
+    - Sft+ Y
+    - Sft+ G
+    - G
+    - Sft+ N
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
