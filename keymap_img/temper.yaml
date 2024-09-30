@@ -58,13 +58,13 @@ layers:
     - G
     - H
     - F
-  - - {t: ▽, type: trans}
+  - - {t: ESC, h: aznav}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: SPACE, h: altgr}
-    - {t: ▽, type: trans}
-  altgr:
+    - {t: SPACE, h: azaltgr}
+    - {t: DEL, h: aznav}
+  azaltgr:
   - - AGr+ 9
     - {t: 'Sft+ ,', s: Sft+ <}
     - {t: Sft+ ., s: Sft+ >}
@@ -151,6 +151,34 @@ layers:
     - '2'
     - '3'
     - {t: ., s: '>'}
+  - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  aznav:
+  - - ''
+    - HOME
+    - ↑
+    - END
+    - PG UP
+    - {t: Sft+ ., s: Sft+ >}
+    - Sft+ 7
+    - Sft+ 8
+    - Sft+ 9
+    - '#'
+  - - ⇪
+    - ←
+    - ↓
+    - →
+    - PG DN
+    - '6'
+    - Sft+ 4
+    - Sft+ 5
+    - Sft+ 6
+    - {t: 'Sft+ ,', s: Sft+ <}
+  - ['', Sft+ ↹, ↹, '', '', Sft+ 0, Sft+ 1, Sft+ 2, Sft+ 3, M]
   - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
