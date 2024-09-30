@@ -65,36 +65,36 @@ layers:
     - {t: SPACE, h: altgr}
     - {t: ▽, type: trans}
   altgr:
-  - - AGr+ 6
-    - '2'
-    - '3'
-    - {t: '`', s: '~'}
-    - {t: '=', s: +}
-    - '6'
-    - AGr+ E
-    - '0'
-    - N
-    - {t: Sft+ =, s: Sft+ +}
-  - - AGr+ X
-    - '4'
-    - '5'
-    - AGr+ C
-    - {t: '-', s: _}
-    - AGr+ Z
-    - '7'
-    - '8'
-    - '9'
+  - - AGr+ 9
+    - {t: 'Sft+ ,', s: Sft+ <}
+    - {t: Sft+ ., s: Sft+ >}
+    - {t: ']', s: '}'}
+    - Sft+ '
+    - AGr+ 0
     - '1'
-  - - AGr+ B
-    - AGr+ 4
+    - '#'
+    - '4'
+    - AGr+ 7
+  - - AGr+ 4
+    - '5'
+    - {t: '-', s: _}
+    - {t: AGr+ =, s: AGr+ +}
+    - {t: '=', s: +}
+    - AGr+ 8
+    - {t: Sft+ =, s: Sft+ +}
+    - '6'
+    - {t: Sft+ ., s: Sft+ >}
+    - '3'
+  - - AGr+ 2
     - AGr+ 5
-    - AGr+ SPACE
-    - {t: Sft+ `, s: Sft+ ~}
-    - AGr+ Q
-    - Sft+ Y
-    - Sft+ G
-    - G
-    - Sft+ N
+    - {t: AGr+ -, s: AGr+ _}
+    - '8'
+    - AGr+ 3
+    - AGr+ 6
+    - {t: /, s: '?'}
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - Sft+ M
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
