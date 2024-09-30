@@ -11,7 +11,7 @@
 
 #define DEFAULT 0
 #define AZBEPO 1
-#define ALTGRBP 2
+#define ALTGR 2
 #define NAV 3
 #define MACROS 4
 #define ADJUST 5
@@ -106,7 +106,7 @@
                         >;
                 };
 
-                altgrbp_layer {
+                altgr_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &kp RA(N6)     &kp N2        &kp N3       &kp GRAVE     &kp EQUAL          &kp N6       &kp RA(E)      &kp N0         &kp N     &kp S(EQUAL)
