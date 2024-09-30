@@ -53,7 +53,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {t: SPACE, h: altgr}
     - {t: ▽, type: trans}
   altgr:
   - - AGr+ 6
@@ -90,7 +90,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
   nav:
   - ['', HOME, ↑, END, PG UP, AGr+ L, '7', '8', '9', Sft+ *]
