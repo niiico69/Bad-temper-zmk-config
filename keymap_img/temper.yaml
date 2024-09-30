@@ -65,7 +65,7 @@ layers:
     - AGr+ E
     - '0'
     - N
-    - S(EQUAL)
+    - {t: Sft+ =, s: Sft+ +}
   - - AGr+ X
     - '4'
     - '5'
