@@ -27,25 +27,34 @@ layers:
     - {t: RET, h: macros}
     - {t: SPACE, h: ⎇}
     - {t: DEL, h: nav}
-  azbepo:
-  - [B, E, P, O, E, V, D, L, J, W]
-  - - A
-    - U
-    - I
-    - E
-    - {t: ',', s: <}
+  azbepolar:
+  - - B
+    - {t: ;, s: ':'}
+    - P
+    - O
+    - Z
+    - W
+    - V
+    - D
+    - L
+    - J
+  - - {t: Q, h: ⌘}
+    - {t: U, h: ⎇}
+    - {t: I, h: ⌃}
+    - {t: E, h: ⇧}
+    - M
     - C
-    - T
-    - S
-    - R
-    - N
-  - - Z
+    - {t: T, h: ⇧}
+    - {t: S, h: ⌃}
+    - {t: R, h: ⎇}
+    - {t: N, h: ⌘}
+  - - '6'
     - Y
     - X
-    - {t: ., s: '>'}
+    - {t: ',', s: <}
     - K
-    - {t: '''', s: '"'}
-    - Q
+    - '4'
+    - A
     - G
     - H
     - F
@@ -91,6 +100,43 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
+    - {t: ▽, type: trans}
+  onedk:
+  - - AGr+ 6
+    - '2'
+    - '3'
+    - {t: '`', s: '~'}
+    - {t: '=', s: +}
+    - '6'
+    - AGr+ E
+    - '0'
+    - N
+    - {t: Sft+ =, s: Sft+ +}
+  - - AGr+ X
+    - '4'
+    - '5'
+    - AGr+ C
+    - {t: '-', s: _}
+    - AGr+ Z
+    - '7'
+    - '8'
+    - '9'
+    - '1'
+  - - AGr+ B
+    - AGr+ 4
+    - AGr+ 5
+    - AGr+ SPACE
+    - {t: Sft+ `, s: Sft+ ~}
+    - AGr+ Q
+    - Sft+ Y
+    - Sft+ G
+    - G
+    - Sft+ N
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   nav:
   - ['', HOME, ↑, END, PG UP, AGr+ L, '7', '8', '9', Sft+ *]
@@ -170,10 +216,10 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - BT CLR
-    - {t: azbepo, h: toggle}
     - {t: ▽, type: trans}
+    - {t: azbepolar, h: toggle}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {t: default, h: toggle}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
