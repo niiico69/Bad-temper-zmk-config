@@ -36,7 +36,7 @@ layers:
     - W
     - V
     - D
-    - L
+    - {t: onedk, h: sticky, s: '!'}
     - J
   - - {t: Q, h: ⌘}
     - {t: U, h: ⎇}
@@ -110,7 +110,7 @@ layers:
     - '6'
     - AGr+ E
     - '0'
-    - N
+    - {t: N, type: held}
     - {t: Sft+ =, s: Sft+ +}
   - - AGr+ X
     - '4'
