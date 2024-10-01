@@ -12,7 +12,7 @@
 #define DEFAULT 0
 #define AZBEPOLAR 1
 #define AZALTGR 2
-#define ONEDK 3
+#define AZONEDK 3
 #define NAV 4
 #define AZNAV 5
 #define MACROS 6
@@ -38,15 +38,15 @@
         hm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            tapping-term-ms = <300>;    // <---[[moderate duration]]
             quick-tap-ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
         dk: dead_key {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&sl ONEDK>, <&kp EXCL>;
+            bindings = <&sl AZONEDK>, <&kp L>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         /*        
@@ -146,12 +146,12 @@
                         >;
                 };
 
-                onedk_layer {
+                azonedk_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &kp RA(Q)      &kp N9       &kp GRAVE     &kp RA(O)      &none              &none      &kp LS(NUHS)     &kp N8        &trans     &kp RA(U)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp 0        &kp N2        &kp N7     &kp RA(RBRC)     &none              &kp N5      &kp MINUS     &kp RA(I)   &kp LS(RA(I))   &kp SQT
+        &kp N0        &kp N2        &kp N7     &kp RA(RBRC)     &none              &kp N5      &kp MINUS     &kp RA(I)   &kp LS(RA(I))   &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp RA(G)       &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
