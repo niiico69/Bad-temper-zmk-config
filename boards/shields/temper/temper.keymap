@@ -49,6 +49,24 @@
             bindings = <&sl AZONEDK>, <&kp LS(M)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        mins_excl: mins_excl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N6>, <&kp SLASH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(COMMA)>, <&kp DOT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        comma_semi: comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp M>, <&kp COMMA>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         /*        
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
@@ -67,24 +85,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LSHFT>, <&caps_word>;
-            mods = <(MOD_LSFT)>;
-        };
-        comma_semi: comma_semi {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
-            mods = <(MOD_LSFT)>;
-        };
-        dot_colon: dot_colon {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
-            mods = <(MOD_LSFT)>;
-        };
-        qmrk_excl: qmrk_excl {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp QMARK>, <&kp EXCL>;
             mods = <(MOD_LSFT)>;
         };
         slh_morph: slh_morph {
@@ -123,9 +123,9 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         &kp B        &kp SEMI        &kp P        &kp O         &kp Z             &kp W         &kp V         &kp D         &kp L         &kp J      
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hm LGUI Q     &hm LALT U   &hm LCTRL I   &hm LSHFT E      &kp M             &kp C      &hm LSHFT T   &hm LCTRL S    &hm LALT R    &hm LGUI N
+     &hm LGUI Q     &hm LALT U   &hm LCTRL I   &hm LSHFT E   &comma_semi          &kp C      &hm LSHFT T   &hm LCTRL S    &hm LALT R    &hm LGUI N
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp N6        &kp Y          &kp X    &kp LS(COMMA)     &kp K              &dk          &kp A         &kp G         &kp H         &kp F
+      &mins_excl      &kp Y          &kp X      &dot_colon      &kp K              &dk          &kp A         &kp G         &kp H         &kp F
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                 &lt AZNAV ESC     &trans        &trans            &trans   &lt AZALTGR SPACE  &lt AZNAV DEL
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -149,7 +149,7 @@
                 azonedk_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp RA(Q)      &kp N9       &kp GRAVE     &kp RA(O)      &none              &none      &kp LS(NUHS)     &kp N8        &trans     &kp RA(U)
+      &kp RA(Q)      &kp N9       &kp GRAVE     &kp RA(O)       &none             &none      &kp LS(NUHS)     &kp N8        &trans     &kp RA(U)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp N0        &kp N2        &kp N7     &kp RA(RBRC)     &none              &kp N5      &kp MINUS     &kp RA(I)   &kp LS(RA(I))   &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
