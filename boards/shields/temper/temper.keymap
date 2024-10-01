@@ -46,7 +46,7 @@
         dk: dead_key {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&sl AZONEDK>, <&kp QMARK>;
+            bindings = <&sl AZONEDK>, <&kp LS(M)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         /*        
