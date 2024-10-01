@@ -51,7 +51,7 @@ layers:
   - - '6'
     - Y
     - X
-    - {t: ',', s: <}
+    - {t: 'Sft+ ,', s: Sft+ <}
     - K
     - {t: azonedk, h: sticky, s: Sft+ M}
     - A
