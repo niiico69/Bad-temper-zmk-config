@@ -36,7 +36,7 @@ layers:
     - W
     - V
     - D
-    - {t: azonedk, h: sticky, s: L}
+    - L
     - J
   - - {t: Q, h: ⌘}
     - {t: U, h: ⎇}
@@ -53,7 +53,7 @@ layers:
     - X
     - {t: ',', s: <}
     - K
-    - '4'
+    - {t: azonedk, h: sticky, s: '?'}
     - A
     - G
     - H
@@ -110,7 +110,7 @@ layers:
     - ''
     - 'Sft+ #'
     - '8'
-    - {type: held}
+    - {t: ▽, type: trans}
     - AGr+ U
   - - '0'
     - '2'
@@ -122,7 +122,16 @@ layers:
     - AGr+ I
     - Sft+AGr+ I
     - ''''
-  - [AGr+ G, '', '', '', '', '', '', '', '', '']
+  - - AGr+ G
+    - ''
+    - ''
+    - ''
+    - ''
+    - {type: held}
+    - ''
+    - ''
+    - ''
+    - ''
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
