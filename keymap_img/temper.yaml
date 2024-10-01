@@ -42,16 +42,16 @@ layers:
     - {t: U, h: ⎇}
     - {t: I, h: ⌃}
     - {t: E, h: ⇧}
-    - M
+    - {t: M, s: ','}
     - C
     - {t: T, h: ⇧}
     - {t: S, h: ⌃}
     - {t: R, h: ⎇}
     - {t: N, h: ⌘}
-  - - '6'
+  - - {t: '6', s: /}
     - Y
     - X
-    - {t: 'Sft+ ,', s: Sft+ <}
+    - {t: 'Sft+ ,', s: .}
     - K
     - {t: azonedk, h: sticky, s: Sft+ M}
     - A
