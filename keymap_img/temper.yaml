@@ -102,36 +102,27 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
   onedk:
-  - - AGr+ 6
-    - '2'
-    - '3'
-    - {t: '`', s: '~'}
-    - {t: '=', s: +}
-    - '6'
-    - AGr+ E
-    - '0'
-    - {t: N, type: held}
-    - {t: Sft+ =, s: Sft+ +}
-  - - AGr+ X
-    - '4'
-    - '5'
-    - AGr+ C
-    - {t: '-', s: _}
-    - AGr+ Z
-    - '7'
-    - '8'
+  - - AGr+ Q
     - '9'
-    - '1'
-  - - AGr+ B
-    - AGr+ 4
-    - AGr+ 5
-    - AGr+ SPACE
-    - {t: Sft+ `, s: Sft+ ~}
-    - AGr+ Q
-    - Sft+ Y
-    - Sft+ G
-    - G
-    - Sft+ N
+    - {t: '`', s: '~'}
+    - AGr+ O
+    - ''
+    - ''
+    - 'Sft+ #'
+    - '8'
+    - {type: held}
+    - AGr+ U
+  - - '0'
+    - '2'
+    - '7'
+    - AGr+ }
+    - ''
+    - '5'
+    - {t: '-', s: _}
+    - AGr+ I
+    - Sft+AGr+ I
+    - ''''
+  - [AGr+ G, '', '', '', '', '', '', '', '', '']
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
