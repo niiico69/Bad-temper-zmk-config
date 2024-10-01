@@ -36,7 +36,7 @@ layers:
     - W
     - V
     - D
-    - {t: onedk, h: sticky, s: '!'}
+    - {t: azonedk, h: sticky, s: L}
     - J
   - - {t: Q, h: ⌘}
     - {t: U, h: ⎇}
@@ -101,7 +101,7 @@ layers:
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-  onedk:
+  azonedk:
   - - AGr+ Q
     - '9'
     - {t: '`', s: '~'}
