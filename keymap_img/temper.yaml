@@ -53,7 +53,7 @@ layers:
     - X
     - {t: ',', s: <}
     - K
-    - {t: azonedk, h: sticky, s: '?'}
+    - {t: azonedk, h: sticky, s: Sft+ M}
     - A
     - G
     - H
