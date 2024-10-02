@@ -143,8 +143,8 @@ layers:
   - [⇪, ←, ↓, →, PG DN, AGr+ K, '4', '5', '6', '0']
   - - ''
     - Sft+ ↹
-    - ↹
     - ''
+    - ↹
     - ''
     - N
     - '1'
@@ -178,7 +178,7 @@ layers:
     - Sft+ 5
     - Sft+ 6
     - {t: 'Sft+ ,', s: Sft+ <}
-  - ['', Sft+ ↹, ↹, '', '', Sft+ 0, Sft+ 1, Sft+ 2, Sft+ 3, M]
+  - ['', Sft+ ↹, '', ↹, '', Sft+ 0, Sft+ 1, Sft+ 2, Sft+ 3, M]
   - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
