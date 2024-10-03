@@ -45,16 +45,19 @@
 // NOTE: Only accents accessed with a dead key on CSA need to have this mod-morph
 // Otherwise the shift key will be pressed before the macro and will not be registering
 // It's not required for accents with direct access such as: à é è ç
+ZMK_MOD_MORPH(morph_a_grav, bindings = <&AGRA A>, <&AGRA LS(A)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // à / À
 ZMK_MOD_MORPH(morph_a_circ, bindings = <&CIRC A>, <&CIRC LS(A)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // â / Â
 ZMK_MOD_MORPH(morph_e_circ, bindings = <&CIRC E>, <&CIRC LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
-ZMK_MOD_MORPH(morph_e_trem, bindings = <&TREM E>, <&TREM LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
+ZMK_MOD_MORPH(morph_e_, bindings = <&CIRC E>, <&CIRC LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
+ZMK_MOD_MORPH(morph_e_grav, bindings = <&AGRA E>, <&AGRA LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // è / È
+ZMK_MOD_MORPH(morph_e_trem, bindings = <&TREM E>, <&TREM LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ë / Ë
 ZMK_MOD_MORPH(morph_i_circ, bindings = <&CIRC I>, <&CIRC LS(I)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // î / Î
 ZMK_MOD_MORPH(morph_i_trem, bindings = <&TREM I>, <&TREM LS(I)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
 ZMK_MOD_MORPH(morph_o_circ, bindings = <&CIRC O>, <&CIRC LS(O)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ô / Ô
-ZMK_MOD_MORPH(morph_o_trem, bindings = <&TREM O>, <&TREM LS(O)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
+ZMK_MOD_MORPH(morph_o_trem, bindings = <&TREM O>, <&TREM LS(O)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ö / Ö
 ZMK_MOD_MORPH(morph_u_circ, bindings = <&CIRC U>, <&CIRC LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // û / Û
 ZMK_MOD_MORPH(morph_u_grav, bindings = <&AGRA U>, <&AGRA LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ù / Ù
-ZMK_MOD_MORPH(morph_u_trem, bindings = <&TREM U>, <&TREM LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
+ZMK_MOD_MORPH(morph_u_trem, bindings = <&TREM U>, <&TREM LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ü / Ü
 ZMK_MOD_MORPH(morph__ae, bindings = <&kp RC(A)>, <&kp LS(RC(A))>; mods = <(MOD_LSFT|MOD_RSFT)>;) // æ / Æ
 ZMK_MOD_MORPH(morph__oe, bindings = <&kp RC(E)>, <&kp LS(RC(E))>; mods = <(MOD_LSFT|MOD_RSFT)>;) // œ / Œ
 
