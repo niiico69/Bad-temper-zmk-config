@@ -1,0 +1,168 @@
+// tap: backspace | shift + tap: delete
+ZMK_MOD_MORPH(bspc_del,
+    bindings = <&kp BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: to dke | shift + tap: exclm
+ZMK_MOD_MORPH(to_dke_exclm,
+    bindings = <&to DKE>, <&kp EXCLM>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: to dkb | shift + tap: quest
+ZMK_MOD_MORPH(to_dkb_quest,
+    bindings = <&to DKB>, <&kp QUEST>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: backspace | shift + tap: delete | hold: nav layer
+ZMK_MOD_MORPH(bs_del_nav,
+    bindings = <&lt NAV BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: plus | shift + tap: minus
+ZMK_MOD_MORPH(plus_minus,
+    bindings = <&kp PLUS>, <&kp MINUS>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: multiply | shift + tap: divide
+ZMK_MOD_MORPH(multi_div,
+    bindings = <&kp STAR>, <&kp KP_SLASH>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: slash | shift + tap: backslash
+ZMK_MOD_MORPH(slsh_bslsh,
+    bindings = <&kp KP_SLASH>, <&kp LS(SLSH)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: dash | shift + tap: tilde
+ZMK_MOD_MORPH(dash_tilde,
+    bindings = <&kp MINUS>, <&kp TILDS>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: comma | shift + tap: period
+ZMK_MOD_MORPH(comma_dot,
+    bindings = <&kp COMMA>, <&kp DOT>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: minus | shift + tap: exclam
+ZMK_MOD_MORPH(mins_excl,
+    bindings = <&kp N6>, <&kp SLASH>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: minus | shift + tap: quest
+ZMK_MOD_MORPH(mins_quest,
+    bindings = <&kp MINS>, <&kp QUEST>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// hold: num layer | tap: escape | shift OR ctrl + tap : mouse click
+//ZMK_MOD_MORPH(num_esc_clk,
+//    bindings = <&lt NUM ESC>, <&mkp LCLK>;
+//    mods = <(MOD_LSFT|MOD_LCTL)>;
+//)
+
+// hold: symbol layer | tap: space | shift + tap: non-breaking space
+ZMK_MOD_MORPH(sp_nbsp_sym,
+    bindings = <&lt SYM SPACE>, <&kp RALT(SPACE)>;
+    mods = <(MOD_LSFT)>;
+)
+
+// tap: period | shift + tap: colon
+ZMK_MOD_MORPH(dot_col,
+    bindings = <&kp PERD>, <&kp CLN>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: comma | shift + tap: semi-colon
+ZMK_MOD_MORPH(comma_semi,
+    bindings = <&kp COMM>, <&kp SEMIC>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: trema | shift + tap: grave ERG
+ZMK_MOD_MORPH(trem_gr_erg,
+    bindings = <&KPT ACC_TR ERG>, <&KPT ACC_GR ERG>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+
+// tap: trema | shift + tap: grave BEP
+ZMK_MOD_MORPH(trem_gr_bep,
+    bindings = <&KPT ACC_TR BEP>, <&KPT ACC_GR BEP>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: single apostrophe | shift + tap: double apostrophe
+ZMK_MOD_MORPH(sap_dap,
+    bindings = <&kp SAPOS>, <&kp DAPOS>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 0 | shift + tap: @
+ZMK_MOD_MORPH(FR_0_AROB,
+    bindings = <&kp FR_0>, <&kp AROB>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+) 
+
+// tap: 1 | shift + tap: €
+ZMK_MOD_MORPH(FR_1_EURO,
+    bindings = <&kp FR_1>, <&kp EURO>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 2 | shift + tap: «
+ZMK_MOD_MORPH(FR_2_LAQUO,
+    bindings = <&kp FR_2>, <&kp LAQUO>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 3 | shift + tap: »
+ZMK_MOD_MORPH(FR_3_RAQUO,
+    bindings = <&kp FR_3>, <&kp RAQUO>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 4 | shift + tap: $
+ZMK_MOD_MORPH(FR_4_DOLL,
+    bindings = <&kp FR_4>, <&kp DOLL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 5 | shift + tap: %
+ZMK_MOD_MORPH(FR_5_PERC,
+    bindings = <&kp FR_5>, <&kp PERC>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 6 | shift + tap: ^ 
+ZMK_MOD_MORPH(FR_6_CIRC,
+    bindings = <&kp FR_6>, <&kp ACC_CI>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 7 | shift + tap: &
+ZMK_MOD_MORPH(FR_7_ESPR,
+    bindings = <&kp FR_7>, <&kp ESPR>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 8 | shift + tap: *
+ZMK_MOD_MORPH(FR_8_STR,
+    bindings = <&kp FR_8>, <&kp STR>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 9 | shift + tap: #
+ZMK_MOD_MORPH(FR_9_SHARP,
+    bindings = <&kp FR_9>, <&kp SHARP>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)

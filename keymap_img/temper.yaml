@@ -1,5 +1,5 @@
 layers:
-  default:
+  QWERTY:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - {t: A, h: ⌘}
     - {t: S, h: ⎇}
@@ -20,14 +20,51 @@ layers:
     - M
     - {t: ',', s: <}
     - {t: ., s: '>'}
-    - /
-  - - {t: ESC, h: nav}
+    - {t: Sft+ ., s: Sft+ >}
+  - - {t: ESC, h: QWERTY_NAV}
     - {t: BSPC, h: ⇧}
     - ⌘
-    - {t: RET, h: macros}
+    - {t: RET, h: MACROS}
     - {t: SPACE, h: ⎇}
-    - {t: DEL, h: nav}
-  azbepolar:
+    - {t: DEL, h: QWERTY_NAV}
+  ERGOL:
+  - - A
+    - C
+    - O
+    - P
+    - Z
+    - J
+    - {t: ;, s: ':'}
+    - D
+    - {t: ONEDK_ERG, h: toggle, s: /}
+    - Y
+  - - {t: Q, h: ⌘}
+    - {t: S, h: ⎇}
+    - {t: E, h: ⌃}
+    - {t: N, h: ⇧}
+    - F
+    - L
+    - {t: R, h: ⇧}
+    - {t: T, h: ⌃}
+    - {t: I, h: ⎇}
+    - {t: U, h: ⌘}
+  - - W
+    - X
+    - {t: '6', s: Sft+ M}
+    - V
+    - B
+    - {t: 'Sft+ ,', s: .}
+    - H
+    - G
+    - {t: M, s: ','}
+    - K
+  - - {t: ESC, h: '6'}
+    - {t: BSPC, h: ⇧}
+    - ⌘
+    - {t: RET, h: MACROS}
+    - {t: SPACE, h: SYMBOLS}
+    - {t: DEL, h: '6'}
+  BEPOLAR:
   - - B
     - {t: ;, s: ':'}
     - P
@@ -53,21 +90,21 @@ layers:
     - X
     - {t: 'Sft+ ,', s: .}
     - K
-    - {t: azonedk, h: sticky, s: Sft+ M}
+    - {t: ONEDK_BEP, h: toggle, s: Sft+ M}
     - A
     - G
     - H
     - F
-  - - {t: ESC, h: aznav}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: SPACE, h: azaltgr}
-    - {t: DEL, h: aznav}
-  azaltgr:
-  - - AGr+ 9
-    - {t: 'Sft+ ,', s: Sft+ <}
-    - {t: Sft+ ., s: Sft+ >}
+  - - {t: ESC, h: '6'}
+    - {t: BSPC, h: ⇧}
+    - ⌘
+    - {t: RET, h: MACROS}
+    - {t: SPACE, h: SYMBOLS}
+    - {t: DEL, h: '6'}
+  SYMBOLS:
+  - - {t: '[', s: '{'}
+    - NUBS
+    - Sft+ NUBS
     - {t: ']', s: '}'}
     - Sft+ '
     - AGr+ 0
@@ -81,7 +118,7 @@ layers:
     - {t: AGr+ =, s: AGr+ +}
     - {t: '=', s: +}
     - AGr+ 8
-    - {t: Sft+ =, s: Sft+ +}
+    - +
     - '6'
     - {t: Sft+ ., s: Sft+ >}
     - '3'
@@ -101,33 +138,52 @@ layers:
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-  azonedk:
-  - - AGr+ Q
-    - '9'
-    - {t: '`', s: '~'}
-    - AGr+ O
+  ONEDK_ERG:
+  - - '&A_CI 1'
+    - '&CEDIL 1'
+    - '&OE_L 1'
+    - '&O_CI 1'
     - ''
     - ''
-    - 'Sft+ #'
-    - '8'
+    - '&MA_MI 1'
+    - '&USC 1'
+    - {t: '&KPT LS(LBKT) 1', s: '&KPT RA(N7) 1'}
+    - '&U_CI 1'
+  - - '&A_GR 1'
+    - '&E_CU 1'
+    - {t: '&E_CI_E 1', h: ⇧}
+    - '&E_CI 1'
+    - ''
+    - '&LPARN 1'
+    - '&RPARN 1'
+    - '&I_CI 1'
+    - '&I_TR 1'
+    - '&U_GR 1'
+  - ['&AE_L 1', '', '', '', '', '', '', '', '', '']
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - AGr+ U
-  - - '0'
-    - '2'
-    - '7'
-    - {t: 'AGr+ ]', s: 'AGr+ }'}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&SAPOST 1'
+    - {t: ▽, type: trans}
+  ONEDK_BEP:
+  - ['&A_CI 2', '&CEDIL 2', '&OE_L 2', '&O_CI 2', '', '', '&MA_MI 2', '&USC 2', '', '&U_CI 2']
+  - - '&A_GR 2'
+    - '&E_CU 2'
+    - {t: '&E_CI_B 2', h: ⇧}
+    - '&E_CI 2'
     - ''
-    - '5'
-    - {t: '-', s: _}
-    - AGr+ I
-    - Sft+AGr+ I
-    - ''''
-  - - AGr+ G
+    - '&LPARN 2'
+    - '&RPARN 2'
+    - '&I_CI 2'
+    - '&I_TR 2'
+    - '&U_GR 2'
+  - - '&AE_L 2'
     - ''
     - ''
     - ''
     - ''
-    - {type: held}
+    - {t: '&KPT LS(LBKT) 2', s: '&KPT RA(N7) 2'}
     - ''
     - ''
     - ''
@@ -136,37 +192,18 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - '&SAPOST 2'
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  nav:
-  - ['', HOME, ↑, END, PG UP, AGr+ L, '7', '8', '9', Sft+ *]
-  - [⇪, ←, ↓, →, PG DN, AGr+ K, '4', '5', '6', '0']
-  - - ''
-    - Sft+ ↹
-    - ''
-    - ↹
-    - ''
-    - N
-    - '1'
-    - '2'
-    - '3'
-    - {t: ., s: '>'}
-  - - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  aznav:
+  '6':
   - - ''
     - HOME
     - ↑
     - END
     - PG UP
     - {t: Sft+ ., s: Sft+ >}
-    - Sft+ 7
-    - Sft+ 8
-    - Sft+ 9
+    - {t: Sft+ 7, s: '1'}
+    - {t: Sft+ 8, s: '#'}
+    - {t: Sft+ 9, s: AGr+ 3}
     - '#'
   - - ⇪
     - ←
@@ -174,18 +211,55 @@ layers:
     - →
     - PG DN
     - '6'
-    - Sft+ 4
-    - Sft+ 5
-    - Sft+ 6
+    - {t: Sft+ 4, s: ']'}
+    - {t: Sft+ 5, s: Sft+ '}
+    - {t: Sft+ 6, s: '['}
+    - {t: Sft+ 0, s: AGr+ 0}
+  - - ''
+    - Sft+ ↹
+    - ''
+    - ↹
+    - ''
+    - M
+    - {t: Sft+ 1, s: AGr+ E}
+    - {t: Sft+ 2, s: AGr+ Z}
+    - {t: Sft+ 3, s: AGr+ X}
     - {t: 'Sft+ ,', s: Sft+ <}
-  - ['', Sft+ ↹, '', ↹, '', Sft+ 0, Sft+ 1, Sft+ 2, Sft+ 3, M]
   - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  macros:
+  QWERTY_NAV:
+  - - ''
+    - HOME
+    - ↑
+    - END
+    - PG UP
+    - {t: Sft+ ., s: Sft+ >}
+    - '7'
+    - '8'
+    - '9'
+    - '#'
+  - [⇪, ←, ↓, →, PG DN, '6', '4', '5', '6', '0']
+  - - ''
+    - Sft+ ↹
+    - ''
+    - ↹
+    - ''
+    - M
+    - '1'
+    - '2'
+    - '3'
+    - {t: 'Sft+ ,', s: Sft+ <}
+  - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  MACROS:
   - - VOL UP
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -222,17 +296,17 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  adjust:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  ADJUST:
+  - - '&sys_reset'
+    - '&bootloader'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - OUT TOG
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '&bootloader'
+    - '&sys_reset'
   - - {t: BT, h: '0'}
     - {t: BT, h: '1'}
     - {t: BT, h: '2'}
@@ -244,11 +318,11 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - BT CLR
+    - {t: QWERTY, h: toggle}
     - {t: ▽, type: trans}
-    - {t: azbepolar, h: toggle}
-    - {t: ▽, type: trans}
-    - {t: default, h: toggle}
-    - {t: ▽, type: trans}
+    - {t: BEPOLAR, h: toggle}
+    - {t: ERGOL, h: toggle}
+    - '&soft_off'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
