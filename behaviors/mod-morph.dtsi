@@ -4,6 +4,18 @@ ZMK_MOD_MORPH(bspc_del,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+// tap: to dke | shift + tap: exclm
+ZMK_MOD_MORPH(to_dke_exclm,
+    bindings = <&to DKE>, <&kp EXCLM>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: to dkb | shift + tap: quest
+ZMK_MOD_MORPH(to_dkb_quest,
+    bindings = <&to DKB>, <&kp QUEST>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
 // tap: backspace | shift + tap: delete | hold: nav layer
 ZMK_MOD_MORPH(bs_del_nav,
     bindings = <&lt NAV BSPC>, <&kp DEL>;
@@ -43,6 +55,12 @@ ZMK_MOD_MORPH(comma_dot,
 // tap: minus | shift + tap: exclam
 ZMK_MOD_MORPH(mins_excl,
     bindings = <&kp N6>, <&kp SLASH>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: minus | shift + tap: quest
+ZMK_MOD_MORPH(mins_quest,
+    bindings = <&kp MINS>, <&kp QUEST>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 

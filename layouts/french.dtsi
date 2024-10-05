@@ -51,7 +51,7 @@
 #define BSLSH  RA(N8)    // \
 #define PLS    LS(EQUAL) // +
 #define MINS   N6        // -
-#define UNDSC    N8      // _
+#define UNDSC  N8        // _
 #define SHARP  RA(N3)    // #
 #define EXCLM  SLASH     // !
 #define SEMIC  COMMA     // ;
