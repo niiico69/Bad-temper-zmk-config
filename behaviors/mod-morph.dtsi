@@ -1,0 +1,83 @@
+// tap: backspace | shift + tap: delete
+ZMK_MOD_MORPH(bspc_del,
+    bindings = <&kp BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: backspace | shift + tap: delete | hold: nav layer
+ZMK_MOD_MORPH(bs_del_nav,
+    bindings = <&lt NAV BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: plus | shift + tap: minus
+ZMK_MOD_MORPH(plus_minus,
+    bindings = <&kp PLUS>, <&kp MINUS>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: multiply | shift + tap: divide
+ZMK_MOD_MORPH(multi_div,
+    bindings = <&kp STAR>, <&kp KP_SLASH>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: slash | shift + tap: backslash
+ZMK_MOD_MORPH(slsh_bslsh,
+    bindings = <&kp KP_SLASH>, <&kp LS(SLSH)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: dash | shift + tap: tilde
+ZMK_MOD_MORPH(dash_tilde,
+    bindings = <&kp MINUS>, <&kp TILDS>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: comma | shift + tap: period
+ZMK_MOD_MORPH(comma_dot,
+    bindings = <&kp COMMA>, <&kp DOT>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: minus | shift + tap: exclam
+ZMK_MOD_MORPH(mins_excl,
+    bindings = <&kp N6>, <&kp SLASH>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// hold: num layer | tap: escape | shift OR ctrl + tap : mouse click
+//ZMK_MOD_MORPH(num_esc_clk,
+//    bindings = <&lt NUM ESC>, <&mkp LCLK>;
+//    mods = <(MOD_LSFT|MOD_LCTL)>;
+//)
+
+// hold: symbol layer | tap: space | shift + tap: non-breaking space
+ZMK_MOD_MORPH(sp_nbsp_sym,
+    bindings = <&lt SYM SPACE>, <&kp RALT(SPACE)>;
+    mods = <(MOD_LSFT)>;
+)
+
+// tap: period | shift + tap: colon
+ZMK_MOD_MORPH(dot_col,
+    bindings = <&kp PERD>, <&kp CLN>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: comma | shift + tap: semi-colon
+ZMK_MOD_MORPH(comma_semi,
+    bindings = <&kp COMM>, <&kp SEMIC>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: trema | shift + tap: grave
+ZMK_MOD_MORPH(trem_gr,
+    bindings = <&KPT ACC_TR ERG>, <&KPT ACC_GR ERG>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: single apostrophe | shift + tap: double apostrophe
+ZMK_MOD_MORPH(sap_dap,
+    bindings = <&kp SAPOS>, <&kp DAPOS>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
