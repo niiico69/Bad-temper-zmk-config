@@ -1,5 +1,5 @@
 layers:
-  default:
+  ERGOL:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - {t: A, h: ⌘}
     - {t: S, h: ⎇}
@@ -21,13 +21,13 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - - {t: ESC, h: nav}
+  - - {t: ESC, h: '5'}
     - {t: BSPC, h: ⇧}
     - ⌘
-    - {t: RET, h: macros}
+    - {t: RET, h: MACROS}
     - {t: SPACE, h: ⎇}
-    - {t: DEL, h: nav}
-  azbepolar:
+    - {t: DEL, h: '5'}
+  BEPOLAR:
   - - B
     - {t: ;, s: ':'}
     - P
@@ -53,21 +53,21 @@ layers:
     - X
     - {t: 'Sft+ ,', s: .}
     - K
-    - {t: azonedk, h: sticky, s: Sft+ M}
+    - {t: ONEDK_BEP, h: toggle}
     - A
     - G
     - H
     - F
-  - - {t: ESC, h: aznav}
+  - - {t: ESC, h: '5'}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: SPACE, h: azaltgr}
-    - {t: DEL, h: aznav}
-  azaltgr:
-  - - AGr+ 9
-    - {t: 'Sft+ ,', s: Sft+ <}
-    - {t: Sft+ ., s: Sft+ >}
+    - {t: SPACE, h: SYMBOLS}
+    - {t: DEL, h: '5'}
+  SYMBOLS:
+  - - {t: '[', s: '{'}
+    - NUBS
+    - Sft+ NUBS
     - {t: ']', s: '}'}
     - Sft+ '
     - AGr+ 0
@@ -81,7 +81,7 @@ layers:
     - {t: AGr+ =, s: AGr+ +}
     - {t: '=', s: +}
     - AGr+ 8
-    - {t: Sft+ =, s: Sft+ +}
+    - +
     - '6'
     - {t: Sft+ ., s: Sft+ >}
     - '3'
@@ -101,63 +101,63 @@ layers:
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-  azonedk:
-  - - AGr+ Q
-    - '9'
-    - {t: '`', s: '~'}
-    - AGr+ O
+  ONEDK_ERG:
+  - - '&A_CI'
+    - '&CEDIL'
+    - '&OE_L'
+    - '&O_CI'
     - ''
     - ''
-    - 'Sft+ #'
-    - '8'
-    - {t: ▽, type: trans}
-    - AGr+ U
-  - - '0'
-    - '2'
-    - '7'
-    - {t: 'AGr+ ]', s: 'AGr+ }'}
+    - '&MA_MI'
+    - '&USC'
+    - {t: '&KPT LS(LBKT) 0', s: '&KPT RA(N7) 0'}
+    - '&U_CI'
+  - - '&A_GR'
+    - '&E_CU'
+    - {t: '&E_CI_E', h: ⇧}
+    - '&E_CI'
     - ''
-    - '5'
-    - {t: '-', s: _}
-    - AGr+ I
-    - Sft+AGr+ I
-    - ''''
-  - - AGr+ G
-    - ''
-    - ''
-    - ''
-    - ''
-    - {type: held}
-    - ''
-    - ''
-    - ''
-    - ''
+    - '&LPARN'
+    - '&RPARN'
+    - '&I_CI'
+    - '&I_TR'
+    - '&U_GR'
+  - ['&AE_L', '', '', '', '', '', '', '', '', '']
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - '&SAPOST'
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  nav:
-  - ['', HOME, ↑, END, PG UP, AGr+ L, '7', '8', '9', Sft+ *]
-  - [⇪, ←, ↓, →, PG DN, AGr+ K, '4', '5', '6', '0']
-  - - ''
-    - Sft+ ↹
+  ONEDK_BEP:
+  - - '&A_CI 1'
+    - '&CEDIL 1'
+    - '&OE_L 1'
+    - '&O_CI 1'
     - ''
-    - ↹
     - ''
-    - N
-    - '1'
-    - '2'
-    - '3'
-    - {t: ., s: '>'}
-  - - {type: held}
+    - '&MA_MI 1'
+    - '&USC 1'
+    - {t: '&KPT LS(LBKT) 0', s: '&KPT RA(N7) 0'}
+    - '&U_CI 1'
+  - - '&A_GR 1'
+    - '&E_CU 1'
+    - {t: '&E_CI_B 1', h: ⇧}
+    - '&E_CI 1'
+    - ''
+    - '&LPARN 1'
+    - '&RPARN 1'
+    - '&I_CI 1'
+    - '&I_TR 1'
+    - '&U_GR 1'
+  - ['&AE_L 1', '', '', '', '', '', '', '', '', '']
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - '&SAPOST 1'
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  aznav:
+  '5':
   - - ''
     - HOME
     - ↑
@@ -168,24 +168,24 @@ layers:
     - Sft+ 8
     - Sft+ 9
     - '#'
-  - - ⇪
-    - ←
-    - ↓
-    - →
-    - PG DN
-    - '6'
-    - Sft+ 4
-    - Sft+ 5
-    - Sft+ 6
+  - [⇪, ←, ↓, →, PG DN, '6', Sft+ 4, Sft+ 5, Sft+ 6, Sft+ 0]
+  - - ''
+    - Sft+ ↹
+    - ''
+    - ↹
+    - ''
+    - M
+    - Sft+ 1
+    - Sft+ 2
+    - Sft+ 3
     - {t: 'Sft+ ,', s: Sft+ <}
-  - ['', Sft+ ↹, '', ↹, '', Sft+ 0, Sft+ 1, Sft+ 2, Sft+ 3, M]
   - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  macros:
+  MACROS:
   - - VOL UP
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -222,7 +222,7 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  adjust:
+  ADJUST:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -245,9 +245,9 @@ layers:
     - {t: ▽, type: trans}
   - - BT CLR
     - {t: ▽, type: trans}
-    - {t: azbepolar, h: toggle}
+    - {t: BEPOLAR, h: toggle}
     - {t: ▽, type: trans}
-    - {t: default, h: toggle}
+    - {t: ERGOL, h: toggle}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
