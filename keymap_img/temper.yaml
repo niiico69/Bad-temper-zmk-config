@@ -1,26 +1,35 @@
 layers:
   ERGOL:
-  - [Q, W, E, R, T, Y, U, I, O, P]
-  - - {t: A, h: ⌘}
-    - {t: S, h: ⎇}
-    - {t: D, h: ⌃}
-    - {t: F, h: ⇧}
-    - G
-    - H
-    - {t: J, h: ⇧}
-    - {t: K, h: ⌃}
-    - {t: L, h: ⎇}
-    - {t: ;, h: ⌘, s: ':'}
-  - - Z
-    - X
+  - - A
     - C
+    - O
+    - P
+    - Z
+    - J
+    - {t: ;, s: ':'}
+    - D
+    - {t: ONEDK_ERG, h: toggle, s: /}
+    - Y
+  - - {t: Q, h: ⌘}
+    - {t: S, h: ⎇}
+    - {t: E, h: ⌃}
+    - {t: N, h: ⇧}
+    - F
+    - L
+    - {t: R, h: ⇧}
+    - {t: T, h: ⌃}
+    - {t: I, h: ⎇}
+    - {t: U, h: ⌘}
+  - - W
+    - X
+    - {t: '6', s: Sft+ M}
     - V
     - B
-    - N
-    - M
-    - {t: ',', s: <}
-    - {t: ., s: '>'}
-    - /
+    - {t: 'Sft+ ,', s: .}
+    - H
+    - G
+    - {t: M, s: ','}
+    - K
   - - {t: ESC, h: '5'}
     - {t: BSPC, h: ⇧}
     - ⌘
@@ -53,7 +62,7 @@ layers:
     - X
     - {t: 'Sft+ ,', s: .}
     - K
-    - {t: ONEDK_BEP, h: toggle}
+    - {t: ONEDK_BEP, h: toggle, s: Sft+ M}
     - A
     - G
     - H
@@ -130,16 +139,7 @@ layers:
     - '&SAPOST'
     - {t: ▽, type: trans}
   ONEDK_BEP:
-  - - '&A_CI 1'
-    - '&CEDIL 1'
-    - '&OE_L 1'
-    - '&O_CI 1'
-    - ''
-    - ''
-    - '&MA_MI 1'
-    - '&USC 1'
-    - {t: '&KPT LS(LBKT) 0', s: '&KPT RA(N7) 0'}
-    - '&U_CI 1'
+  - ['&A_CI 1', '&CEDIL 1', '&OE_L 1', '&O_CI 1', '', '', '&MA_MI 1', '&USC 1', '', '&U_CI 1']
   - - '&A_GR 1'
     - '&E_CU 1'
     - {t: '&E_CI_B 1', h: ⇧}
@@ -150,7 +150,16 @@ layers:
     - '&I_CI 1'
     - '&I_TR 1'
     - '&U_GR 1'
-  - ['&AE_L 1', '', '', '', '', '', '', '', '', '']
+  - - '&AE_L 1'
+    - ''
+    - ''
+    - ''
+    - ''
+    - {t: '&KPT LS(LBKT) 0', s: '&KPT RA(N7) 0'}
+    - ''
+    - ''
+    - ''
+    - ''
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
