@@ -35,7 +35,7 @@
 #define TILDS  RA(N2)    // ~
 /*#define LETHAN RA(COMMA) // ≤
 #define GRTHAN RA(DOT)   // ≥ */
-#define ACC_AI RA(N1)    // ´
+#define ACC_AI RA(N1)    // ´ 
 #define ACC_CI LBKT      // ^
 #define ACC_GR RA(N7)    // `
 #define ACC_TR LS(LBKT)  // ¨
