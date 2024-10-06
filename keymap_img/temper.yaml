@@ -34,7 +34,7 @@ layers:
     - {t: BSPC, h: ⇧}
     - ⌘
     - {t: RET, h: MACROS}
-    - {t: SPACE, h: ⎇}
+    - {t: SPACE, h: SYMBOLS}
     - {t: DEL, h: '5'}
   BEPOLAR:
   - - B
