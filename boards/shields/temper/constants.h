@@ -13,8 +13,9 @@
 #define DKE 4
 #define DKB 5
 #define NAV 6
-#define MAC 7
-#define ADJ 8
+//#define SNV 7
+#define MAC 8
+#define ADJ 9
 
 // Modifier keys
 #define GL LGUI

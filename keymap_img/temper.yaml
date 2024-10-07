@@ -21,12 +21,12 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - {t: Sft+ ., s: Sft+ >}
-  - - {t: ESC, h: '6'}
+  - - {t: ESC, h: SHIFT_NAV}
     - {t: BSPC, h: ⇧}
     - ⌘
     - {t: RET, h: MACROS}
     - {t: SPACE, h: ⎇}
-    - {t: DEL, h: '6'}
+    - {t: DEL, h: SHIFT_NAV}
   ERGOL:
   - - A
     - C
@@ -58,12 +58,12 @@ layers:
     - G
     - {t: M, s: ','}
     - K
-  - - {t: ESC, h: '6'}
+  - - {t: ESC, h: SHIFT_NAV}
     - {t: BSPC, h: ⇧}
     - ⌘
     - {t: RET, h: MACROS}
     - {t: SPACE, h: SYMBOLS}
-    - {t: DEL, h: '6'}
+    - {t: DEL, h: SHIFT_NAV}
   BEPOLAR:
   - - B
     - {t: ;, s: ':'}
@@ -95,12 +95,12 @@ layers:
     - G
     - H
     - F
-  - - {t: ESC, h: '6'}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - - {t: ESC, h: SHIFT_NAV}
+    - {t: BSPC, h: ⇧}
+    - ⌘
+    - {t: RET, h: MACROS}
     - {t: SPACE, h: SYMBOLS}
-    - {t: DEL, h: '6'}
+    - {t: DEL, h: SHIFT_NAV}
   SYMBOLS:
   - - {t: '[', s: '{'}
     - NUBS
@@ -194,7 +194,7 @@ layers:
     - {t: ▽, type: trans}
     - '&SAPOST 2'
     - {t: ▽, type: trans}
-  '6':
+  '7':
   - - ''
     - HOME
     - ↑
@@ -216,8 +216,45 @@ layers:
     - Sft+ 2
     - Sft+ 3
     - {t: 'Sft+ ,', s: Sft+ <}
-  - - {type: held}
+  - - {t: ▽, type: trans}
+    - {t: BSPC, h: '7'}
     - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  SHIFT_NAV:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '1'
+    - '#'
+    - AGr+ 3
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ']', s: '}'}
+    - Sft+ '
+    - {t: '[', s: '{'}
+    - AGr+ 0
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - AGr+ E
+    - AGr+ Z
+    - AGr+ X
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - ''
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}

@@ -46,6 +46,7 @@
 #define AROB   RA(N0)    // @
 #define ESPR   N1        // &
 #define STR    NUHS      // *
+#define EURO   RA(E)     // €
 #define LPAREN N5        // (
 #define RPAREN MINUS     // )
 #define BSLSH  RA(N8)    // \
@@ -80,8 +81,8 @@
 // MOD-MORPH - lowercase / uppercase accented characters
 // NOTE: Only accents accessed with a dead key on french keyboard need to have this mod-morph
 // Otherwise the shift key will be pressed before the macro and will not be registering
-ZMK_MOD_MORPH(morph_a_circ, bindings = <&CIRC A>, <&CIRC LS(A)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // â / Â
-ZMK_MOD_MORPH(morph_a_grav, bindings = <&AGRA A>, <&AGRA LS(A)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // à / À
+ZMK_MOD_MORPH(morph_a_circ, bindings = <&CIRC FR_A>, <&CIRC LS(FR_A)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // â / Â
+ZMK_MOD_MORPH(morph_a_grav, bindings = <&AGRA FR_A>, <&AGRA LS(FR_A)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // à / À
 ZMK_MOD_MORPH(morph_e_aigu, bindings = <&AIGU E>, <&AIGU LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // é / É
 ZMK_MOD_MORPH(morph_e_grav, bindings = <&AGRA E>, <&AGRA LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  //  / È
 ZMK_MOD_MORPH(morph_e_circ, bindings = <&CIRC E>, <&CIRC LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
