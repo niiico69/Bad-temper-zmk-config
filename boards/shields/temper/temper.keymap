@@ -25,7 +25,9 @@
     quick-tap-ms = <300>;
 };
 
-ZMK_CONDITIONAL_LAYER(NAV MAC, ADJ)
+ZMK_CONDITIONAL_LAYER(TRILAYERNAV, NAV MAC, ADJ)
+ZMK_CONDITIONAL_LAYER(TRILAYERQWE, QNV MAC, ADJ)
+
 
 ZMK_LAYER(QWERTY,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
