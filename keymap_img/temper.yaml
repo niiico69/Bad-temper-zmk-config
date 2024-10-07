@@ -21,12 +21,12 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - {t: Sft+ ., s: Sft+ >}
-  - - {t: ESC, h: SHIFT_NAV}
+  - - {t: ESC, h: QWERTY_NAV}
     - {t: BSPC, h: ⇧}
     - ⌘
     - {t: RET, h: MACROS}
     - {t: SPACE, h: ⎇}
-    - {t: DEL, h: SHIFT_NAV}
+    - {t: DEL, h: QWERTY_NAV}
   ERGOL:
   - - A
     - C
@@ -58,12 +58,12 @@ layers:
     - G
     - {t: M, s: ','}
     - K
-  - - {t: ESC, h: SHIFT_NAV}
+  - - {t: ESC, h: '6'}
     - {t: BSPC, h: ⇧}
     - ⌘
     - {t: RET, h: MACROS}
     - {t: SPACE, h: SYMBOLS}
-    - {t: DEL, h: SHIFT_NAV}
+    - {t: DEL, h: '6'}
   BEPOLAR:
   - - B
     - {t: ;, s: ':'}
@@ -95,12 +95,12 @@ layers:
     - G
     - H
     - F
-  - - {t: ESC, h: SHIFT_NAV}
+  - - {t: ESC, h: '6'}
     - {t: BSPC, h: ⇧}
     - ⌘
     - {t: RET, h: MACROS}
     - {t: SPACE, h: SYMBOLS}
-    - {t: DEL, h: SHIFT_NAV}
+    - {t: DEL, h: '6'}
   SYMBOLS:
   - - {t: '[', s: '{'}
     - NUBS
@@ -194,67 +194,67 @@ layers:
     - {t: ▽, type: trans}
     - '&SAPOST 2'
     - {t: ▽, type: trans}
-  '7':
+  '6':
   - - ''
     - HOME
     - ↑
     - END
     - PG UP
     - {t: Sft+ ., s: Sft+ >}
-    - Sft+ 7
-    - Sft+ 8
-    - Sft+ 9
+    - {t: Sft+ 7, s: '1'}
+    - {t: Sft+ 8, s: '#'}
+    - {t: Sft+ 9, s: AGr+ 3}
     - '#'
-  - [⇪, ←, ↓, →, PG DN, '6', Sft+ 4, Sft+ 5, Sft+ 6, Sft+ 0]
+  - - ⇪
+    - ←
+    - ↓
+    - →
+    - PG DN
+    - '6'
+    - {t: Sft+ 4, s: ']'}
+    - {t: Sft+ 5, s: Sft+ '}
+    - {t: Sft+ 6, s: '['}
+    - {t: Sft+ 0, s: AGr+ 0}
   - - ''
     - Sft+ ↹
     - ''
     - ↹
     - ''
     - M
-    - Sft+ 1
-    - Sft+ 2
-    - Sft+ 3
+    - {t: Sft+ 1, s: AGr+ E}
+    - {t: Sft+ 2, s: AGr+ Z}
+    - {t: Sft+ 3, s: AGr+ X}
     - {t: 'Sft+ ,', s: Sft+ <}
-  - - {t: ▽, type: trans}
-    - {t: BSPC, h: '7'}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  SHIFT_NAV:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - '1'
-    - '#'
-    - AGr+ 3
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ']', s: '}'}
-    - Sft+ '
-    - {t: '[', s: '{'}
-    - AGr+ 0
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - AGr+ E
-    - AGr+ Z
-    - AGr+ X
-    - {t: ▽, type: trans}
   - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  QWERTY_NAV:
+  - - ''
+    - HOME
+    - ↑
+    - END
+    - PG UP
+    - {t: Sft+ ., s: Sft+ >}
+    - '7'
+    - '8'
+    - '9'
+    - '#'
+  - [⇪, ←, ↓, →, PG DN, '6', '4', '5', '6', '0']
+  - - ''
+    - Sft+ ↹
     - ''
+    - ↹
+    - ''
+    - M
+    - '1'
+    - '2'
+    - '3'
+    - {t: 'Sft+ ,', s: Sft+ <}
+  - - {type: held}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -327,9 +327,9 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
+  - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
