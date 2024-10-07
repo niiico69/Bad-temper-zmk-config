@@ -136,9 +136,9 @@ ZMK_MOD_MORPH(FR_5_PERC,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: 6 | shift + tap: ^
+// tap: 6 | shift + tap: ^ 
 ZMK_MOD_MORPH(FR_6_CIRC,
-    bindings = <&kp FR_6>, <&kp CIRC>;
+    bindings = <&kp FR_6>, <&kp ACC_CI>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
