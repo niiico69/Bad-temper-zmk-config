@@ -20,7 +20,7 @@ layers:
     - M
     - {t: ',', s: <}
     - {t: ., s: '>'}
-    - {t: Sft+ ., s: Sft+ >}
+    - {t: /, s: '?'}
   - - {t: ESC, h: QWERTY_NAV}
     - {t: BSPC, h: ⇧}
     - ⌘
