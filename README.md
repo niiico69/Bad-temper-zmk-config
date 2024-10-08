@@ -1,6 +1,6 @@
 # BadTemper ZMK Config
 
-This is my personal ZMK config for the BadTemper which is a [temper](https://github.com/raeedcho/temper).
+This is my personal ZMK config for the [BadTemper](https://github.com/essFitt/Bad-Temper) (which is a [temper](https://github.com/raeedcho/temper)).
 
 Some notes about this config:
 - This Temper config has been made to be able to type by default with the system layout.
