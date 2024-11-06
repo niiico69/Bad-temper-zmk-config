@@ -4,7 +4,7 @@
 #undef CONFIG_ZMK_MACRO_DEFAULT_TAP_MS
 #define CONFIG_ZMK_MACRO_DEFAULT_TAP_MS 40
 
-/* French Standard Mappings */
+/* French Standard Mappings for Linux */
 
 #define FR_A   Q         // A
 #define FR_Z   W         // Z
@@ -33,8 +33,8 @@
 #define QUEST  LS(M)     // ?
 #define PIP    RA(N6)    // |
 #define TILDS  RA(N2)    // ~
-/*#define LETHAN RA(COMMA) // ≤
-#define GRTHAN RA(DOT)   // ≥ */
+#define LETHAN RA(NUBS)  // ≤
+#define GRTHAN RA(LS(NUBS)) // ≥ */
 #define ACC_AI RA(N1)    // ´ 
 #define ACC_CI LBKT      // ^
 #define ACC_GR RA(N7)    // `
@@ -59,6 +59,31 @@
 #define CLN    DOT       // :
 #define PERD   LS(COMMA) // .
 #define COMM   M         // ,
+#define NBSPC  RA(SPACE) // espace insécable
+#define T_DOT  RA(SEMIC) // …
+
+/* Add-on for French Standard Mappings for Mac */
+#define ACC_AIM LS(RA(N1)) // ´ 
+#define ACC_GRM NUHS      // `
+#define UNDSCM  LS(EQUAL) // _
+#define MU      RA(FR_M)  // µ
+#define MINSM   EQUAL     // -
+#define STRM    LS(RBKT)  // *
+#define AROBM   NUBS      // @
+#define BSLSHM  LS(RA(DOT)) // \
+#define PLUSM   LS(SLASH) // +
+#define PIPM    LS(RA(L)) // |
+#define EXCLMM  N8        // !
+#define SHARPM  LS(NUBS)  // #
+#define LTHM    GRAVE      // <
+#define GTHM    LS(GRAVE)  // >
+#define LBRACM  RA(N5)    // {
+#define RBRACM  RA(MINUS) // }
+#define EQLM    SLASH     // =
+#define TILDM   RA(N)     // ~
+#define LBKETM  LS(RA(N5))    // [
+#define RBKETM  LS(RA(MINUS)) // ]
+
 
 
 
@@ -84,7 +109,7 @@
 ZMK_MOD_MORPH(morph_a_circ, bindings = <&CIRC FR_A>, <&CIRC LS(FR_A)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // â / Â
 ZMK_MOD_MORPH(morph_a_grav, bindings = <&AGRA FR_A>, <&AGRA LS(FR_A)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // à / À
 ZMK_MOD_MORPH(morph_e_aigu, bindings = <&AIGU E>, <&AIGU LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // é / É
-ZMK_MOD_MORPH(morph_e_grav, bindings = <&AGRA E>, <&AGRA LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  //  / È
+ZMK_MOD_MORPH(morph_e_grav, bindings = <&AGRA E>, <&AGRA LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // è / È
 ZMK_MOD_MORPH(morph_e_circ, bindings = <&CIRC E>, <&CIRC LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
 ZMK_MOD_MORPH(morph_e_trem, bindings = <&TREM E>, <&TREM LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ë / Ë
 ZMK_MOD_MORPH(morph_i_circ, bindings = <&CIRC I>, <&CIRC LS(I)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // î / Î
@@ -94,9 +119,20 @@ ZMK_MOD_MORPH(morph_o_trem, bindings = <&TREM O>, <&TREM LS(O)>; mods = <(MOD_LS
 ZMK_MOD_MORPH(morph_u_circ, bindings = <&CIRC U>, <&CIRC LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // û / Û
 ZMK_MOD_MORPH(morph_u_grav, bindings = <&AGRA U>, <&AGRA LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ù / Ù
 ZMK_MOD_MORPH(morph_u_trem, bindings = <&TREM U>, <&TREM LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ü / Ü
-ZMK_MOD_MORPH(morph_c_cedi, bindings = <&kp RA(R)>, <&kp LS(RA(R))>; mods = <(MOD_LSFT|MOD_RSFT)>;) // ü / Ü
-ZMK_MOD_MORPH(morph__ae,    bindings = <&kp RA(G)>, <&kp LS(RA(G))>; mods = <(MOD_LSFT|MOD_RSFT)>;) // æ / Æ
-ZMK_MOD_MORPH(morph__oe,    bindings = <&kp GRAVE>, <&kp LS(GRAVE)>; mods = <(MOD_LSFT|MOD_RSFT)>;) // œ / Œ
+ZMK_MOD_MORPH(morph_c_cedi, bindings = <&kp RA(R)>, <&kp LS(RA(R))>; mods = <(MOD_LSFT|MOD_RSFT)>;) // ç / Ç
+ZMK_MOD_MORPH(morph_ae,     bindings = <&kp RA(G)>, <&kp LS(RA(G))>; mods = <(MOD_LSFT|MOD_RSFT)>;) // æ / Æ
+ZMK_MOD_MORPH(morph_oe,     bindings = <&kp GRAVE>, <&kp LS(GRAVE)>; mods = <(MOD_LSFT|MOD_RSFT)>;) // œ / Œ
+ZMK_MOD_MORPH(morph_dots,   bindings = <&kp T_DOT>, <&kp T_DOT>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // … / …
+
+
+// Mac version
+ZMK_MOD_MORPH(morph_a_gravm, bindings = <&AGRAM FR_A>, <&AGRAM LS(FR_A)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // à / À
+ZMK_MOD_MORPH(morph_e_aigum, bindings = <&AIGUM E>, <&AIGUM LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // é / É
+ZMK_MOD_MORPH(morph_e_gravm, bindings = <&AGRAM E>, <&AGRAM LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // è / È
+ZMK_MOD_MORPH(morph_u_gravm, bindings = <&AGRAM U>, <&AGRAM LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ù / Ù
+ZMK_MOD_MORPH(morph_c_cedim, bindings = <&kp N9>,   <&kp RA(N9)>;   mods = <(MOD_LSFT|MOD_RSFT)>;)  // ç / Ç
+ZMK_MOD_MORPH(morph_aem,     bindings = <&kp RA(FR_A)>, <&kp LS(RA(FR_A))>; mods = <(MOD_LSFT|MOD_RSFT)>;) // æ / Æ
+ZMK_MOD_MORPH(morph_oem,     bindings = <&kp RA(O)>, <&kp LS(RA(O))>; mods = <(MOD_LSFT|MOD_RSFT)>;) // œ / Œ
 
 // KEYMAP MACROS
 // The following macros return to the specified layer after being pressed
@@ -113,14 +149,28 @@ ZMK_MACRO_ONE_PARAM(O_TR, bindings = <&morph_o_trem>, <&macro_param_1to1>, <&to 
 ZMK_MACRO_ONE_PARAM(U_CI, bindings = <&morph_u_circ>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // Û
 ZMK_MACRO_ONE_PARAM(U_GR, bindings = <&morph_u_grav>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // Ù
 ZMK_MACRO_ONE_PARAM(U_TR, bindings = <&morph_u_trem>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // Ê
-ZMK_MACRO_ONE_PARAM(AE_L, bindings = <&morph__ae>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)    // Æ
-ZMK_MACRO_ONE_PARAM(OE_L, bindings = <&morph__oe>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)    // Œ
+ZMK_MACRO_ONE_PARAM(AE_L, bindings = <&morph_ae>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)     // Æ
+ZMK_MACRO_ONE_PARAM(OE_L, bindings = <&morph_oe>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)     // Œ
 ZMK_MACRO_ONE_PARAM(CEDIL, bindings = <&morph_c_cedi>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)  // Ç
 ZMK_MACRO_ONE_PARAM(MA_MI, bindings = <&kp MATH_MICRO>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // µ
 ZMK_MACRO_ONE_PARAM(USC, bindings = <&kp UNDSC>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)      // _
 ZMK_MACRO_ONE_PARAM(LPARN, bindings = <&kp LPAREN>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)   // (
 ZMK_MACRO_ONE_PARAM(RPARN, bindings = <&kp RPAREN>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)   // )
 ZMK_MACRO_ONE_PARAM(SAPOST, bindings = <&kp SAPOS>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)   // '
+ZMK_MACRO_ONE_PARAM(DEGR, bindings = <&kp DEG>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // °
+ZMK_MACRO_ONE_PARAM(DOTS, bindings = <&morph_dots>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)   // …
+
+
+// Mac version
+ZMK_MACRO_ONE_PARAM(A_GRM, bindings = <&morph_a_gravm>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // À
+ZMK_MACRO_ONE_PARAM(E_CUM, bindings = <&morph_e_aigum>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // É
+ZMK_MACRO_ONE_PARAM(E_GRM, bindings = <&morph_e_gravm>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // È
+ZMK_MACRO_ONE_PARAM(U_GRM, bindings = <&morph_u_gravm>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // Ù
+ZMK_MACRO_ONE_PARAM(AE_M, bindings = <&morph_aem>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)      // Æ
+ZMK_MACRO_ONE_PARAM(OE_M, bindings = <&morph_oem>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)      // Œ
+ZMK_MACRO_ONE_PARAM(CEDILM, bindings = <&morph_c_cedim>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // Ç
+ZMK_MACRO_ONE_PARAM(MA_MIM, bindings = <&kp MU>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)        // µ
+ZMK_MACRO_ONE_PARAM(USCM, bindings = <&kp UNDSCM>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)      // _
 
 
 // ACCENTS HOME ROW MODS
@@ -130,6 +180,10 @@ ZMK_MACRO_ONE_PARAM(SAPOST, bindings = <&kp SAPOS>, <&macro_param_1to1>, <&to MA
 /* Ergo-L */
 ZMK_MACRO(E_CI_B, bindings = <&morph_e_grav>, <&to BEP>;) // Ê
 ZMK_MACRO(E_CI_E, bindings = <&morph_e_grav>, <&to ERG>;) // Ê
+
+// Mac version
+ZMK_MACRO(E_CI_BM, bindings = <&morph_e_gravm>, <&to BEPM>;) // Ê
+ZMK_MACRO(E_CI_EM, bindings = <&morph_e_gravm>, <&to ERGM>;) // Ê
 
 // ACCENTS MACROS
 
@@ -163,13 +217,25 @@ ZMK_MACRO_ONE_PARAM(AGRA, bindings =
     <&macro_tap &kp MACRO_PLACEHOLDER>;
 )
 
+// ` to input
+ZMK_MACRO_ONE_PARAM(AGRAM, bindings =
+    <&kp ACC_GRM>,
+    <&macro_param_1to1>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>;
+)
+
 // ´ to input
 ZMK_MACRO_ONE_PARAM(AIGU, bindings =
     <&kp ACC_AI>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>;//,
-//    <&macro_param_2to1>,
-//    <&to MACRO_PLACEHOLDER>;
+    <&macro_tap &kp MACRO_PLACEHOLDER>;
+)
+
+// ´ to input
+ZMK_MACRO_ONE_PARAM(AIGUM, bindings =
+    <&kp ACC_AIM>,
+    <&macro_param_1to1>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>;
 )
 
 // ¨ to input

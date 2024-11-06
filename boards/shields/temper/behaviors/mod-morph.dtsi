@@ -1,3 +1,9 @@
+// tap: plus | shift + tap: plus
+ZMK_MOD_MORPH(plusm,
+    bindings = <&kp LS(SLASH)>, <&kp LS(SLASH)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
 // tap: backspace | shift + tap: delete
 ZMK_MOD_MORPH(bspc_del,
     bindings = <&kp BSPC>, <&kp DEL>;
@@ -13,6 +19,18 @@ ZMK_MOD_MORPH(to_dke_exclm,
 // tap: to dkb | shift + tap: quest
 ZMK_MOD_MORPH(to_dkb_quest,
     bindings = <&to DKB>, <&kp QUEST>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: to dke | shift + tap: exclm
+ZMK_MOD_MORPH(to_dkem_exclm,
+    bindings = <&to DKEM>, <&kp EXCLM>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: to dkb | shift + tap: quest
+ZMK_MOD_MORPH(to_dkbm_quest,
+    bindings = <&to DKBM>, <&kp QUEST>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
@@ -98,6 +116,18 @@ ZMK_MOD_MORPH(trem_gr_erg,
 // tap: trema | shift + tap: grave BEP
 ZMK_MOD_MORPH(trem_gr_bep,
     bindings = <&KPT ACC_TR BEP>, <&KPT ACC_GR BEP>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: trema | shift + tap: grave ERGM
+ZMK_MOD_MORPH(tremm_gr_erg,
+    bindings = <&KPT ACC_TR ERGM>, <&KPT ACC_GRM ERGM>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: trema | shift + tap: grave BEPM
+ZMK_MOD_MORPH(tremm_gr_bep,
+    bindings = <&KPT ACC_TR BEPM>, <&KPT ACC_GRM BEPM>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 

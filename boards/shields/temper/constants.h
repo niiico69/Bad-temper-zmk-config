@@ -6,16 +6,22 @@
 
 // Layers
 // Must match order in which they are defined
-#define QWE 0
-#define ERG 1
-#define BEP 2
-#define SYM 3
-#define DKE 4
-#define DKB 5
-#define NAV 6
-#define QNV 7
-#define MAC 8
-#define ADJ 9
+#define QWE  0
+#define ERG  1
+#define BEP  2
+#define ERGM 3
+#define BEPM 4
+#define SYM  5
+#define SYMM 6
+#define DKE  7
+#define DKB  8 
+#define DKEM 9 
+#define DKBM 10
+#define NAV  11
+#define NAVM 12
+#define QNV  13
+#define MAC  14
+#define ADJ  15
 
 // Modifier keys
 #define GL LGUI
