@@ -112,16 +112,16 @@ layers:
     - D
     - {t: ONEDK_ERG_MAC, h: toggle, s: /}
     - Y
-  - - {t: Q, h: ⌘}
+  - - {t: Q, h: ⌃}
     - {t: S, h: ⎇}
-    - {t: E, h: ⌃}
+    - {t: E, h: ⌘}
     - {t: N, h: ⇧}
     - F
     - L
     - {t: R, h: ⇧}
-    - {t: T, h: ⌃}
+    - {t: T, h: ⌘}
     - {t: I, h: ⎇}
-    - {t: U, h: ⌘}
+    - {t: U, h: ⌃}
   - - W
     - X
     - {t: '6', s: Sft+ M}
@@ -149,16 +149,16 @@ layers:
     - D
     - L
     - J
-  - - {t: Q, h: ⌘}
+  - - {t: Q, h: ⌃}
     - {t: U, h: ⎇}
-    - {t: I, h: ⌃}
+    - {t: I, h: ⌘}
     - {t: E, h: ⇧}
     - {t: M, s: ','}
     - C
     - {t: T, h: ⇧}
-    - {t: S, h: ⌃}
+    - {t: S, h: ⌘}
     - {t: R, h: ⎇}
-    - {t: N, h: ⌘}
+    - {t: N, h: ⌃}
   - - {t: '6', s: /}
     - Y
     - X
