@@ -24,7 +24,7 @@ ZMK_MOD_MORPH(to_dkb_quest,
 
 // tap: to dke | shift + tap: exclm
 ZMK_MOD_MORPH(to_dkem_exclm,
-    bindings = <&to DKEM>, <&kp EXCLM>;
+    bindings = <&to DKEM>, <&kp EXCLMM>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
@@ -82,6 +82,17 @@ ZMK_MOD_MORPH(mins_quest,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+// tap: minus | shift + tap: exclam
+ZMK_MOD_MORPH(mins_exclm,
+    bindings = <&kp MINSM>, <&kp EXCLMM>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: minus | shift + tap: quest
+ZMK_MOD_MORPH(mins_questm,
+    bindings = <&kp MINSM>, <&kp QUEST>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
 // hold: num layer | tap: escape | shift OR ctrl + tap : mouse click
 //ZMK_MOD_MORPH(num_esc_clk,
 //    bindings = <&lt NUM ESC>, <&mkp LCLK>;
