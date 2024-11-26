@@ -110,7 +110,7 @@ layers:
     - J
     - {t: ;, s: ':'}
     - D
-    - {t: ONEDK_ERG_MAC, h: toggle, s: /}
+    - {t: ONEDK_ERG_MAC, h: toggle, s: '8'}
     - Y
   - - {t: Q, h: ⌃}
     - {t: S, h: ⎇}
@@ -124,7 +124,7 @@ layers:
     - {t: U, h: ⌃}
   - - W
     - X
-    - {t: '6', s: Sft+ M}
+    - {t: '=', s: Sft+ M}
     - V
     - B
     - {t: 'Sft+ ,', s: .}
@@ -159,7 +159,7 @@ layers:
     - {t: S, h: ⌘}
     - {t: R, h: ⎇}
     - {t: N, h: ⌃}
-  - - {t: '6', s: /}
+  - - {t: '=', s: '8'}
     - Y
     - X
     - {t: 'Sft+ ,', s: .}
@@ -465,7 +465,7 @@ layers:
     - {t: ▽, type: trans}
   MACROS:
   - - VOL UP
-    - {t: ▽, type: trans}
+    - BRI UP
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -475,7 +475,7 @@ layers:
     - F9
     - F12
   - - MUTE
-    - {t: ▽, type: trans}
+    - BRI AUTO
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -485,10 +485,10 @@ layers:
     - F6
     - F11
   - - VOL DN
+    - BRI DN
     - PREV
     - PP
     - NEXT
-    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - F1
     - F2
