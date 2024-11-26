@@ -83,6 +83,8 @@
 #define TILDM   RA(N)     // ~
 #define LBKETM  LS(RA(N5))    // [
 #define RBKETM  LS(RA(MINUS)) // ]
+#define EUROM   RA(RBKT)  // €
+
 
 
 
@@ -102,6 +104,9 @@
 #define LAQUO RA(Z) // «
 #define RAQUO RA(X) // »
 
+/* Typography for Mac*/
+#define LAQUOM RA(N7)     // «
+#define RAQUOM LS(RA(N7)) // »
 
 // MOD-MORPH - lowercase / uppercase accented characters
 // NOTE: Only accents accessed with a dead key on french keyboard need to have this mod-morph

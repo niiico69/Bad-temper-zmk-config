@@ -207,3 +207,63 @@ ZMK_MOD_MORPH(FR_9_SHARP,
     bindings = <&kp FR_9>, <&kp SHARP>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
+
+// tap: 0 | shift + tap: @
+ZMK_MOD_MORPH(FR_0_AROBM,
+    bindings = <&kp FR_0>, <&kp AROBM>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+) 
+
+// tap: 1 | shift + tap: €
+ZMK_MOD_MORPH(FR_1_EUROM,
+    bindings = <&kp FR_1>, <&kp EUROM>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 2 | shift + tap: «
+ZMK_MOD_MORPH(FR_2_LAQUOM,
+    bindings = <&kp FR_2>, <&kp LAQUOM>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 3 | shift + tap: »
+ZMK_MOD_MORPH(FR_3_RAQUOM,
+    bindings = <&kp FR_3>, <&kp RAQUOM>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 4 | shift + tap: $
+ZMK_MOD_MORPH(FR_4_DOLLM,
+    bindings = <&kp FR_4>, <&kp DOLL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 5 | shift + tap: %
+ZMK_MOD_MORPH(FR_5_PERCM,
+    bindings = <&kp FR_5>, <&kp PERC>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 6 | shift + tap: ^ 
+ZMK_MOD_MORPH(FR_6_CIRCM,
+    bindings = <&kp FR_6>, <&kp ACC_CI>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 7 | shift + tap: &
+ZMK_MOD_MORPH(FR_7_ESPRM,
+    bindings = <&kp FR_7>, <&kp ESPR>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 8 | shift + tap: *
+ZMK_MOD_MORPH(FR_8_STRM,
+    bindings = <&kp FR_8>, <&kp STRM>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: 9 | shift + tap: #
+ZMK_MOD_MORPH(FR_9_SHARPM,
+    bindings = <&kp FR_9>, <&kp SHARPM>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
