@@ -210,7 +210,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: AGr+ SPACE, type: held}
+    - {type: held}
     - {t: ▽, type: trans}
   SYMBOLS_MAC:
   - - {t: '[', s: '{'}
@@ -247,7 +247,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: AGr+ SPACE, type: held}
+    - {type: held}
     - {t: ▽, type: trans}
   ONEDK_ERG:
   - - '&A_CI 1'
@@ -396,7 +396,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - AGr+ SPACE
     - {t: ▽, type: trans}
   NAV_MAC:
   - - ''
@@ -406,8 +406,8 @@ layers:
     - PG UP
     - {t: Sft+ ., s: Sft+ >}
     - {t: Sft+ 7, s: '1'}
-    - {t: Sft+ 8, s: '#'}
-    - {t: Sft+ 9, s: AGr+ 3}
+    - {t: Sft+ 8, s: 'Sft+ ]'}
+    - {t: Sft+ 9, s: Sft+ NUBS}
     - {t: 'Sft+ ]', s: 'Sft+ }'}
   - - ⇪
     - ←
@@ -418,22 +418,22 @@ layers:
     - {t: Sft+ 4, s: ']'}
     - {t: Sft+ 5, s: Sft+ '}
     - {t: Sft+ 6, s: '['}
-    - {t: Sft+ 0, s: AGr+ 0}
+    - {t: Sft+ 0, s: NUBS}
   - - ''
     - Sft+ ↹
     - ''
     - ↹
     - ''
     - M
-    - {t: Sft+ 1, s: AGr+ E}
-    - {t: Sft+ 2, s: AGr+ Z}
-    - {t: Sft+ 3, s: AGr+ X}
+    - {t: Sft+ 1, s: 'AGr+ ]'}
+    - {t: Sft+ 2, s: AGr+ 7}
+    - {t: Sft+ 3, s: Sft+AGr+ 7}
     - {t: 'Sft+ ,', s: Sft+ <}
   - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - AGr+ SPACE
     - {t: ▽, type: trans}
   QWERTY_NAV:
   - - ''
@@ -461,7 +461,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - AGr+ SPACE
     - {t: ▽, type: trans}
   MACROS:
   - - VOL UP
