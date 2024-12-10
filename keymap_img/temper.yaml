@@ -1,5 +1,5 @@
 layers:
-  QWERTY:
+  QWERTY_MAC:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - {t: A, h: ⌃}
     - {t: S, h: ⎇}
@@ -27,7 +27,7 @@ layers:
     - {t: RET, h: MACROS}
     - {t: SPACE, h: ⎇}
     - {t: DEL, h: QWERTY_NAV}
-  QWERTY_MAC:
+  QWERTY:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - {t: A, h: ⌘}
     - {t: S, h: ⎇}
