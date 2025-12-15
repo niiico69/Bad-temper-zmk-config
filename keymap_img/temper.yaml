@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: temper}
 layers:
   QWERTY_MAC:
   - [Q, W, E, R, T, Y, U, I, O, P]
@@ -78,10 +79,10 @@ layers:
     - {t: U, h: ⌘}
   - - W
     - X
-    - {t: '6', s: Sft+ M}
+    - {t: '6', s: Sft+M}
     - V
     - B
-    - {t: 'Sft+ ,', s: .}
+    - {t: 'Sft+,', s: .}
     - H
     - G
     - {t: M, s: ','}
@@ -116,9 +117,9 @@ layers:
   - - {t: '6', s: /}
     - Y
     - X
-    - {t: 'Sft+ ,', s: .}
+    - {t: 'Sft+,', s: .}
     - K
-    - {t: ONEDK_BEP, h: toggle, s: Sft+ M}
+    - {t: ONEDK_BEP, h: toggle, s: Sft+M}
     - A
     - G
     - H
@@ -152,10 +153,10 @@ layers:
     - {t: U, h: ⌃}
   - - W
     - X
-    - {t: '=', s: Sft+ M}
+    - {t: '=', s: Sft+M}
     - V
     - B
-    - {t: 'Sft+ ,', s: .}
+    - {t: 'Sft+,', s: .}
     - H
     - G
     - {t: M, s: ','}
@@ -190,9 +191,9 @@ layers:
   - - {t: '=', s: '8'}
     - Y
     - X
-    - {t: 'Sft+ ,', s: .}
+    - {t: 'Sft+,', s: .}
     - K
-    - {t: ONEDK_BEP_MAC, h: toggle, s: Sft+ M}
+    - {t: ONEDK_BEP_MAC, h: toggle, s: Sft+M}
     - A
     - G
     - H
@@ -206,34 +207,34 @@ layers:
   SYMBOLS:
   - - {t: '[', s: '{'}
     - NUBS
-    - Sft+ NUBS
+    - Sft+NUBS
     - {t: ']', s: '}'}
-    - Sft+ '
-    - AGr+ 0
+    - Sft+'
+    - AltGr+0
     - '1'
     - '#'
     - '4'
-    - AGr+ 7
-  - - AGr+ 4
+    - AltGr+7
+  - - AltGr+4
     - '5'
     - {t: '-', s: _}
-    - {t: AGr+ =, s: AGr+ +}
+    - {t: AltGr+=, s: AltGr++}
     - {t: '=', s: +}
-    - AGr+ 8
+    - AltGr+8
     - +
     - '6'
-    - {t: Sft+ ., s: Sft+ >}
+    - {t: Sft+., s: Sft+>}
     - '3'
-  - - AGr+ 2
-    - AGr+ 5
-    - {t: AGr+ -, s: AGr+ _}
+  - - AltGr+2
+    - AltGr+5
+    - {t: AltGr+-, s: AltGr+_}
     - '8'
-    - AGr+ 3
-    - AGr+ 6
+    - AltGr+3
+    - AltGr+6
     - {t: /, s: '?'}
     - {t: ',', s: <}
     - {t: ., s: '>'}
-    - Sft+ M
+    - Sft+M
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -243,34 +244,34 @@ layers:
   SYMBOLS_MAC:
   - - {t: '[', s: '{'}
     - {t: '`', s: '~'}
-    - {t: Sft+ `, s: Sft+ ~}
+    - {t: Sft+`, s: Sft+~}
     - {t: ']', s: '}'}
-    - Sft+ '
+    - Sft+'
     - NUBS
     - '1'
-    - {t: 'Sft+ ]', s: 'Sft+ }'}
+    - {t: 'Sft+]', s: 'Sft+}'}
     - '4'
     - '#'
-  - - AGr+ 5
+  - - AltGr+5
     - '5'
     - {t: '-', s: _}
-    - {t: AGr+ -, s: AGr+ _}
+    - {t: AltGr+-, s: AltGr+_}
     - {t: /, s: '?'}
-    - {t: Sft+AGr+ ., s: Sft+AGr+ >}
-    - {t: Sft+ /, s: Sft+ /}
+    - {t: Sft+AltGr+., s: Sft+AltGr+>}
+    - {t: Sft+/, s: Sft+/}
     - {t: '=', s: +}
-    - {t: Sft+ ., s: Sft+ >}
+    - {t: Sft+., s: Sft+>}
     - '3'
-  - - AGr+ N
-    - Sft+AGr+ 5
-    - {t: Sft+AGr+ -, s: Sft+AGr+ _}
-    - {t: Sft+ =, s: Sft+ +}
-    - Sft+ NUBS
-    - Sft+AGr+ L
+  - - AltGr+N
+    - Sft+AltGr+5
+    - {t: Sft+AltGr+-, s: Sft+AltGr+_}
+    - {t: Sft+=, s: Sft++}
+    - Sft+NUBS
+    - Sft+AltGr+L
     - '8'
     - {t: ',', s: <}
     - {t: ., s: '>'}
-    - Sft+ M
+    - Sft+M
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -395,10 +396,10 @@ layers:
     - ↑
     - END
     - PG UP
-    - {t: Sft+ ., s: Sft+ >}
-    - {t: Sft+ 7, s: '1'}
-    - {t: Sft+ 8, s: '#'}
-    - {t: Sft+ 9, s: AGr+ 3}
+    - {t: Sft+., s: Sft+>}
+    - {t: Sft+7, s: '1'}
+    - {t: Sft+8, s: '#'}
+    - {t: Sft+9, s: AltGr+3}
     - '#'
   - - ⇪
     - ←
@@ -406,25 +407,25 @@ layers:
     - →
     - PG DN
     - {t: '=', s: +}
-    - {t: Sft+ 4, s: ']'}
-    - {t: Sft+ 5, s: Sft+ '}
-    - {t: Sft+ 6, s: '['}
-    - {t: Sft+ 0, s: AGr+ 0}
+    - {t: Sft+4, s: ']'}
+    - {t: Sft+5, s: Sft+'}
+    - {t: Sft+6, s: '['}
+    - {t: Sft+0, s: AltGr+0}
   - - ''
-    - Sft+ ↹
+    - Sft+↹
     - ''
     - ↹
     - ''
     - M
-    - {t: Sft+ 1, s: AGr+ E}
-    - {t: Sft+ 2, s: AGr+ Z}
-    - {t: Sft+ 3, s: AGr+ X}
-    - {t: 'Sft+ ,', s: Sft+ <}
+    - {t: Sft+1, s: AltGr+E}
+    - {t: Sft+2, s: AltGr+Z}
+    - {t: Sft+3, s: AltGr+X}
+    - {t: 'Sft+,', s: Sft+<}
   - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - AGr+ SPACE
+    - AltGr+SPACE
     - {t: ▽, type: trans}
   NAV_MAC:
   - - ''
@@ -432,36 +433,36 @@ layers:
     - ↑
     - END
     - PG UP
-    - {t: Sft+ ., s: Sft+ >}
-    - {t: Sft+ 7, s: '1'}
-    - {t: Sft+ 8, s: 'Sft+ ]'}
-    - {t: Sft+ 9, s: Sft+ NUBS}
-    - {t: 'Sft+ ]', s: 'Sft+ }'}
+    - {t: Sft+., s: Sft+>}
+    - {t: Sft+7, s: '1'}
+    - {t: Sft+8, s: 'Sft+]'}
+    - {t: Sft+9, s: Sft+NUBS}
+    - {t: 'Sft+]', s: 'Sft+}'}
   - - ⇪
     - ←
     - ↓
     - →
     - PG DN
     - {t: '=', s: +}
-    - {t: Sft+ 4, s: ']'}
-    - {t: Sft+ 5, s: Sft+ '}
-    - {t: Sft+ 6, s: '['}
-    - {t: Sft+ 0, s: NUBS}
+    - {t: Sft+4, s: ']'}
+    - {t: Sft+5, s: Sft+'}
+    - {t: Sft+6, s: '['}
+    - {t: Sft+0, s: NUBS}
   - - ''
-    - Sft+ ↹
+    - Sft+↹
     - ''
     - ↹
     - ''
     - M
-    - {t: Sft+ 1, s: 'AGr+ ]'}
-    - {t: Sft+ 2, s: AGr+ 7}
-    - {t: Sft+ 3, s: Sft+AGr+ 7}
-    - {t: 'Sft+ ,', s: Sft+ <}
+    - {t: Sft+1, s: 'AltGr+]'}
+    - {t: Sft+2, s: AltGr+7}
+    - {t: Sft+3, s: Sft+AltGr+7}
+    - {t: 'Sft+,', s: Sft+<}
   - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - AGr+ SPACE
+    - AltGr+SPACE
     - {t: ▽, type: trans}
   QWERTY_NAV:
   - - ''
@@ -473,10 +474,10 @@ layers:
     - '7'
     - '8'
     - '9'
-    - AGr+ I
+    - AltGr+I
   - [⇪, ←, ↓, →, PG DN, C, '4', '5', '6', '0']
   - - ''
-    - Sft+ ↹
+    - Sft+↹
     - ''
     - ↹
     - ''
@@ -489,7 +490,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - AGr+ SPACE
+    - AltGr+SPACE
     - {t: ▽, type: trans}
   MACROS:
   - - VOL UP
@@ -552,7 +553,7 @@ layers:
   - - BT CLR
     - {t: QWERTY_MAC, h: toggle}
     - {t: QWERTY, h: toggle}
-    - {t: BEPOLAR_MAC, h: toggle}
+    - {t: ERGOL, h: toggle}
     - {t: ERGOL_MAC, h: toggle}
     - '&soft_off'
     - {t: ▽, type: trans}
@@ -560,8 +561,8 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {type: held}
-    - {t: BEPOLAR, h: toggle}
-    - {t: ERGOL, h: toggle}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
