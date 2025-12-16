@@ -8,12 +8,12 @@
 #
 #endif
 #
-#if SHIELD_TEMPER_LEFT || SHIELD_TEMPER_RIGHT
-#
-#config ZMK_SPLIT
-#    default y
-#
-#endif
+if SHIELD_TEMPER_LEFT || SHIELD_TEMPER_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
 
 if SHIELD_TEMPER_DONGLE
 
@@ -39,5 +39,5 @@ config BT_MAX_CONN
 # Set this to the same number as BT_MAX_CONN
 config BT_MAX_PAIRED
     default 7
-    
+
 endif
