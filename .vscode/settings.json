@@ -1,5 +1,8 @@
 {
     "files.associations": {
         "*.keymap": "c"
-    }
+    },
+    "editor.formatOnSave": false,
+    //"editor.formatOnPaste": false,
+    "C_Cpp.formatting": "disabled"
 }
