@@ -24,7 +24,7 @@ layers:
     - {t: /, s: '?'}
   - - {t: ESC, h: QWERTY_NAV}
     - {t: BSPC, h: ⇧}
-    - ⌘
+    - ADJUST
     - {t: RET, h: MACROS}
     - {t: SPACE, h: ⎇}
     - {t: DEL, h: QWERTY_NAV}
@@ -52,7 +52,7 @@ layers:
     - {t: /, s: '?'}
   - - {t: ESC, h: QWERTY_NAV}
     - {t: BSPC, h: ⇧}
-    - ⌘
+    - ADJUST
     - {t: RET, h: MACROS}
     - {t: SPACE, h: ⎇}
     - {t: DEL, h: QWERTY_NAV}
@@ -89,7 +89,7 @@ layers:
     - K
   - - {t: ESC, h: '12'}
     - {t: BSPC, h: ⇧}
-    - ⌘
+    - ADJUST
     - {t: RET, h: MACROS}
     - {t: SPACE, h: SYMBOLS}
     - {t: DEL, h: '12'}
@@ -126,7 +126,7 @@ layers:
     - F
   - - {t: ESC, h: '12'}
     - {t: BSPC, h: ⇧}
-    - ⌘
+    - ADJUST
     - {t: RET, h: MACROS}
     - {t: SPACE, h: SYMBOLS}
     - {t: DEL, h: '12'}
@@ -163,7 +163,7 @@ layers:
     - K
   - - {t: ESC, h: NAV_MAC}
     - {t: BSPC, h: ⇧}
-    - ⌘
+    - ADJUST
     - {t: RET, h: MACROS}
     - {t: SPACE, h: SYMBOLS_MAC}
     - {t: DEL, h: NAV_MAC}
@@ -200,7 +200,7 @@ layers:
     - F
   - - {t: ESC, h: NAV_MAC}
     - {t: BSPC, h: ⇧}
-    - ⌘
+    - ADJUST
     - {t: RET, h: MACROS}
     - {t: SPACE, h: SYMBOLS_MAC}
     - {t: DEL, h: NAV_MAC}
@@ -560,9 +560,9 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {type: held}
-    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
